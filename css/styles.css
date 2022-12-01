@@ -61,6 +61,21 @@ address {
   padding: 0 15px;
 }
 
+/* скрытый заголовок */
+.visually__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* +++++++++++++++ HEADER +++++++++++== */
 
 .header {
@@ -243,22 +258,8 @@ address {
 }
 
 /* section */
-/* скрытый заголовок */
-.visually__hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* <!-- 1.Показники досвіду --> */
+/* <!-- 1.Показники досвіду experience--> */
 
 .features__sections {
   display: flex;
@@ -656,7 +657,7 @@ address {
 }
 
 /* ++++++++++++++  Портфоліо   +++++++++++++++++ */
-/* Кнопки в портфоліо */
+/* Фільтри в портфоліо */
 
 .filter {
   display: flex;
